@@ -9,4 +9,8 @@ node
     {
         sh 'cd jpl' && 'mvn package'
     }
+    stage ('archiveArtifacts')
+    {
+        archiveArtifacts 'target/*.zip'
+    }
 }
