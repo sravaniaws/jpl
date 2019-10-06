@@ -11,6 +11,6 @@ node
     }
     stage ('archiveArtifacts')
     {
-        archiveArtifacts 'target/*.zip'
+        archiveArtifacts 'target/gameoflife*.zip'
     }
 }
